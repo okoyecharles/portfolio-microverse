@@ -4,6 +4,16 @@
 .wrapper{
     max-height: 100vh;
     min-width: 500px;
+    background: 
+    url(images/Rectangle\ 5.png) 32% 0% no-repeat,
+    url(images/Ellipse\ 3.png) 24% 85% no-repeat,
+    url(images/Rectangle\ 4.png) 32% 23% no-repeat,
+    url(images/Rectangle\ 5.png) 67% 39% no-repeat,
+    url(images/Ellipse\ 15.png) 32% 49% no-repeat,
+    url(images/Ellipse\ 5.png) 37% 67% no-repeat,
+    url(images/Ellipse\ 5.png) 45% 62% no-repeat,
+    url(images/Ellipse\ 13.png) 37% 44% no-repeat,
+    url(images/Ellipse\ 12.png) 69% 15% no-repeat;
 }
 .nav-bar{
     display: flex;
@@ -12,7 +22,12 @@
 .nav-bar .logo{
     font-size: x-large;
     color: blueviolet;
-    font-weight: 300;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar img{
+    height: 18px;
 }
 article header{
     display: flex;
@@ -45,10 +60,7 @@ article p{
     justify-content: space-between;
     min-width: 25vh;
 }
-
 .social-links ul li{
     list-style-type: none;
     width:0%;
-}
-.social-links ul li a{
 }
