@@ -1,0 +1,69 @@
+.wrapper {
+  max-height: 100vh;
+  min-width: 500px;
+  background: url(images/Rectangle\ 5.png) 32% 0% no-repeat, url(images/Ellipse\ 3.png) 24% 85% no-repeat, url(images/Rectangle\ 4.png) 32% 23% no-repeat, url(images/Rectangle\ 5.png) 67% 39% no-repeat, url(images/Ellipse\ 15.png) 32% 49% no-repeat, url(images/Ellipse\ 5.png) 37% 67% no-repeat, url(images/Ellipse\ 5.png) 45% 62% no-repeat, url(images/Ellipse\ 13.png) 37% 44% no-repeat, url(images/Ellipse\ 12.png) 69% 15% no-repeat;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav .logo {
+  border-bottom: 15px;
+  font-size: x-large;
+  color: blueviolet;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav a {
+  text-decoration: none;
+}
+
+header nav img {
+  height: 18px;
+}
+
+article {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+article h1 {
+  font-size: xx-large;
+  font-weight: 800;
+  color: #172b4d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+article p {
+  color: #344563;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-header p {
+  font-family: sans-serif;
+  color: #7f8cff;
+  font-weight: 300;
+}
+
+.social-links ul {
+  display: inline-flex;
+  justify-content: space-between;
+  min-width: 25vh;
+}
+
+.social-links ul li {
+  list-style-type: none;
+  width: 0%;
+}
