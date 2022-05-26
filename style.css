@@ -53,6 +53,13 @@ article {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+article h1 {
+  font-size: xx-large;
+  font-weight: 800;
+  color: #172b4d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 article p {
   font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   font-weight: 100;
@@ -94,6 +101,17 @@ article p {
   margin: 10px 10px 10px 10px;
 }
 
+.work-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.about-section {
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px lightgray;
+}
+
 .about-list > li {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 300;
@@ -111,6 +129,7 @@ article p {
   border-radius: 8px;
   margin-bottom: 10px;
   padding: 5px 0.1px 5px 10px;
+  border-bottom: 4px  lightgray solid;
 }
 
 .social-links ul li {
@@ -232,7 +251,6 @@ article p {
   display: flex;
   justify-content: space-between;
 }
-
 
 .about-button {
   margin-top: 10px;
