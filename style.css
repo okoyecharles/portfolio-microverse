@@ -47,7 +47,7 @@ article {
   flex-direction: column;
 }
 
-article h1 {
+.content h1 {
   font-size: xx-large;
   font-weight: 800;
   color: #172b4d;
@@ -99,6 +99,16 @@ article p {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 100;
   font-size: large;
+}
+
+.card-time .darken {
+  color: #344563;
+}
+
+.content article #invisible {
+  visibility: hidden;
+  padding: 0px;
+  margin: 0px;
 }
 
 .card-image {
@@ -189,6 +199,12 @@ article p {
   font-weight: 250;
   transition: 1s;
   margin-bottom: 10px;
+}
+
+.about-sh-p {
+  font-family: sans-serif;
+  color: #7f8cff;
+  font-weight: 300;
 }
 
 .about-button:hover {
