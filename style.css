@@ -7,6 +7,13 @@
   min-height: 500px;
 }
 
+.line {
+  border-radius: 5px;
+  border: 3.5px lightgray solid;
+  background: lightgray;
+  margin: 10px 2px 3px 2px;
+}
+
 .work-section {
   display: grid;
   grid-template-columns: 100%;
@@ -65,10 +72,10 @@ article p {
   font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   font-weight: 100;
   font-size: large;
+  margin-top: 0.1px;
 }
 
 .content {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -167,6 +174,8 @@ article p {
 
 .content article #invisible {
   visibility: hidden;
+  height: 0.1px;
+  margin: 0.1px;
 }
 
 .card-image {
