@@ -112,6 +112,8 @@ article p {
 .about-section {
   border-radius: 5px;
   box-shadow: 3px 3px 3px lightgray;
+  display: flex;
+  justify-items: center;
 }
 
 .about-list > li {
