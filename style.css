@@ -12,6 +12,7 @@
   grid-template-columns: 100%;
   row-gap: 20px;
   column-gap: 20px;
+  justify-items: center;
 }
 
 .work-section > div {
@@ -46,14 +47,14 @@ article {
   flex-direction: column;
 }
 
-.content h1 {
+article h1 {
   font-size: xx-large;
   font-weight: 800;
   color: #172b4d;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-article h1 {
+.content h1 {
   font-size: xx-large;
   font-weight: 800;
   color: #172b4d;
@@ -99,12 +100,6 @@ article p {
 
 .main-section {
   margin: 10px 10px 10px 10px;
-}
-
-.work-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
 }
 
 .about-section {
