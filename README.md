@@ -20,6 +20,10 @@ Hello, You are welcome to my portfolio, if you like what you see you can contact
 
 If you have a suggestion that would make this better, please fork the repository and create a pull request. You can also simply open an issue with the tag "enhancement".Remember to support the project with a star. 
 
+## Credit
+
+- Pair-programming partner [Repository link](https://github.com/krisbobo/Portfolio-mobileVersionSkeleton)
+
 ## Acknowledgements
 
 - Credit to ![](https://img.shields.io/badge/Microverse-blueviolet) for providing the essential resources that made this project possible 
