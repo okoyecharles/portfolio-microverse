@@ -355,7 +355,7 @@ article p {
 .contact-section {
   border: 1px red solid;
   background: #6070ff;
-  padding: 0px 25px;
+  padding: 80px 25px;
   border-radius: 70px 0px 0px 0px;
 }
 
@@ -373,11 +373,41 @@ article p {
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 0px;
-  margin-top: 100px;
 }
 
 .contact-content p {
   font-size: 20px;
   font-weight: 400;
   color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.contact-form ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.form-input {
+  width: 95%;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+.cf-button {
+  font-weight: 500;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 7px;
+  color: #6070ff;
 }
