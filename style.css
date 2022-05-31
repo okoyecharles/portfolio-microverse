@@ -8,7 +8,7 @@
 
 .home-wrap {
   max-height: 100vh;
-  background: white;
+  background: #ffffff;
   border-radius: 0.001% 0.001% 0.001% 15%;
 }
 
@@ -51,7 +51,7 @@ article h1 {
 .work-section > div {
   border-radius: 5%;
   margin-top: 50px;
-  background: white;
+  background: #ffffff;
   border: 1px #dfe1e6 solid;
 }
 
@@ -186,7 +186,7 @@ article p {
   display: flex;
   justify-items: center;
   margin-top: 20px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .about-list {
@@ -293,7 +293,7 @@ article p {
   border-radius: 8px;
   color: #396df2;
   border: 1px #396df2 solid;
-  background: white;
+  background: #ffffff;
   font-size: 17px;
   font-weight: 500;
   transition: 1s;
@@ -329,7 +329,7 @@ article p {
   border-radius: 8px;
   color: #396df2;
   border: 1px #396df2 solid;
-  background: white;
+  background: #ffffff;
   font-size: 18px;
   font-weight: 500;
   transition: 1s;
@@ -350,4 +350,34 @@ article p {
   padding-left: 5px;
   font-size: 15px;
   font-weight: 500;
+}
+
+.contact-section {
+  border: 1px red solid;
+  background: #6070ff;
+  padding: 0px 25px;
+  border-radius: 70px 0px 0px 0px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-content > * {
+  text-align: center;
+}
+
+.contact-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0px;
+  margin-top: 100px;
+}
+
+.contact-content p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
 }
