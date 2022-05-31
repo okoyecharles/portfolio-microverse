@@ -8,7 +8,7 @@
 
 .home-wrap {
   max-height: 100vh;
-  background: white;
+  background: #fff;
   border-radius: 0.001% 0.001% 0.001% 15%;
 }
 
@@ -51,7 +51,7 @@ article h1 {
 .work-section > div {
   border-radius: 5%;
   margin-top: 50px;
-  background: white;
+  background: #fff;
   border: 1px #dfe1e6 solid;
 }
 
@@ -127,6 +127,13 @@ header nav a {
   margin-bottom: 0.001px;
 }
 
+.contact-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.001px;
+}
+
 .card-content > article > h1 {
   margin: 0.01px;
   font-size: 32px;
@@ -186,7 +193,7 @@ article p {
   display: flex;
   justify-items: center;
   margin-top: 20px;
-  background-color: white;
+  background-color: #fff;
 }
 
 .about-list {
@@ -212,6 +219,13 @@ article p {
   font-weight: 600;
   color: #7a869a;
   margin: 0%;
+}
+
+.contact-content p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 40px;
 }
 
 .about-list > li > p {
@@ -287,23 +301,16 @@ article p {
 }
 
 .card-button {
-  padding: 13px 5px 13px 5px;
   width: 130px;
   height: 43px;
   border-radius: 8px;
   color: #396df2;
   border: 1px #396df2 solid;
-  background: white;
+  background: #fff;
   font-size: 17px;
   font-weight: 500;
   transition: 1s;
   margin-bottom: 10px;
-}
-
-.card-button:hover {
-  background: lightgray;
-  cursor: pointer;
-  font-weight: 500;
 }
 
 .about-content {
@@ -322,14 +329,15 @@ article p {
 }
 
 .about-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   margin-top: 10px;
-  padding: 13px 5px 13px 5px;
-  width:fit-content;
-  height: 43px;
+  width: fit-content;
   border-radius: 8px;
   color: #396df2;
   border: 1px #396df2 solid;
-  background: white;
+  background: #fff;
   font-size: 18px;
   font-weight: 500;
   transition: 1s;
@@ -341,13 +349,70 @@ article p {
   font-weight: 500;
 }
 
-.about-button:hover {
-  background: lightgray;
-  cursor: pointer;
-}
-
 .lang-drop > li > p {
   padding-left: 5px;
   font-size: 15px;
   font-weight: 500;
+}
+
+.contact-section {
+  background: #6070ff;
+  border-radius: 70px 0.001px 0.001px 0.001px;
+}
+
+.contact-wrap {
+  background: url(images/c-half-circle.png) 100% 15% no-repeat, url(images/c-purple-rect.png) 100% 11% no-repeat, url(images/c-purple-circle.png) 45% 11% no-repeat, url(images/c-white-circle.png) 60% 90% no-repeat, url(images/c-slant-rect.png) 63% 88.5% no-repeat;
+  padding: 80px 25px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-content > * {
+  text-align: center;
+}
+
+.contact-form ul {
+  list-style-type: none;
+  margin: 0.001px;
+  padding: 0.001px;
+}
+
+.form-input {
+  width: 95%;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 10px 0.001px;
+  padding: 10px;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+button {
+  font-weight: 500;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 7px;
+  color: #6070ff;
+  border-radius: 8px;
+  border: none;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background: #6070ff;
+  color: #fff;
+  border: none;
+}
+
+.button:focus {
+  background: #2230d2;
 }
