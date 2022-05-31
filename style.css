@@ -353,10 +353,14 @@ article p {
 }
 
 .contact-section {
-  border: 1px red solid;
   background: #6070ff;
-  padding: 80px 25px;
+  
   border-radius: 70px 0px 0px 0px;
+}
+
+.contact-wrap {
+  background: url(images/c-half-circle.png) 100% 15% no-repeat, url(images/c-purple-rect.png) 100% 11% no-repeat, url(images/c-purple-circle.png) 45% 11% no-repeat, url(images/c-white-circle.png) 60% 90% no-repeat, url(images/c-slant-rect.png) 63% 88.5% no-repeat;
+  padding: 80px 25px;
 }
 
 .contact-content {
@@ -402,7 +406,7 @@ article p {
   height: 120px;
 }
 
-.cf-button {
+button {
   font-weight: 500;
   font-size: 17px;
   display: flex;
@@ -410,4 +414,17 @@ article p {
   align-content: center;
   padding: 7px;
   color: #6070ff;
+  border-radius: 8px;
+  border: none;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background: #6070ff;
+  color: #ffffff;
+  border: none;
+}
+
+.button:focus {
+  background: #2230D2;
 }
