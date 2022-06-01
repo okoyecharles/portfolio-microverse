@@ -498,6 +498,10 @@ button {
     font-size: 15px;
   }
 
+  .nav-links ul li a {
+    color: #172b4d;
+  }
+
   .mobile-menu {
     position: absolute;
     display: none;
