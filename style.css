@@ -424,8 +424,9 @@ button {
   cursor: pointer;
 }
 
-.button:focus:hover {
-  background: #2230d2;
+.nav-links {
+  position: absolute;
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -604,7 +605,6 @@ button {
   }
 }
 
-.nav-links {
-  position: absolute;
-  display: none;
+.button:focus:hover {
+  background: #2230d2;
 }
