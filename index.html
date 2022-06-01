@@ -18,17 +18,25 @@
       <!--Home Page-->
       <div class="home-wrap">
         <section class="first-section">
+          <a href="" id="Portfolio"></a>
           <h1></h1>
           <header>
-            <nav>
+            <nav class="nav-menu">
                 <a href="index.html" class="logo">Charles</a>
-                <img src="images/menu.png" alt="MenuBar">
+                <img src="images/menu.png" class="mobile-menu" alt="MenuBar">
+                <div class="nav-links">
+                  <ul>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                  </ul>
+                </div>
             </nav>
           </header>
           <section class="content">
 
             <div class="content-text">
-              <h1>I'm Charles Nice to meet you!</h1>
+              <h1>I'm Charles <br>Nice to meet you!</h1>
               <article>               
                 <h2 id="invisible">.</h2>
                   <p>
@@ -66,7 +74,7 @@
         <!--Work Section-->
         <section class="work-section">
 
-          <div class="first-card">
+          <div class="first-card card">
             <div class="card-image"><img src="images/FirstCover.png" alt="FirstCover-Image"></div>
             <div class="card-content">
               <article>
@@ -89,11 +97,11 @@
             </div>
           </div>
 
-          <div class="second-card">
+          <div class="second-card card">
             <div class="card-image"><img src="images/secondCover.png" alt="SecondCover-Image"></div>
             <div class="card-content">
               <article>
-                <h1>Multi-Post <br>Stories</h1>
+                <h1>Multi-Post Stories</h1>
                 <div class="card-time">
                   <p class="darken">CANOPY</p>
                   <img src="images/Counter.png" alt="dot">
@@ -112,7 +120,7 @@
             </div>
           </div>
 
-          <div class="third-card">
+          <div class="third-card card">
             <div class="card-image"><img src="images/ThirdCover.png" alt="ThirdCover-Image"></div>
             <div class="card-content">
               <article>
@@ -135,11 +143,11 @@
             </div>
           </div>
 
-          <div class="fourth-card">
+          <div class="fourth-card card">
             <div class="card-image"><img src="images/fouthCover.png" alt="FourthCover-Image"></div>
             <div class="card-content">
               <article>
-                <h1>Multi-Post <br>Stories</h1>
+                <h1>Multi-Post Stories</h1>
                 <div class="card-time">
                   <p class="darken">CANOPY</p>
                   <img src="images/Counter.png" alt="dot">
@@ -162,61 +170,68 @@
 
         <!--About Section-->
         <section class="about-section">
-
+          <a href="" id="About"></a>
           <section class="about-content">                      
-              <h1>About <br>Myself</h1>
-              <p>
-                  My Name is Okoye Charles and I’m a software developer!
-                    I can help you build a product ,
-                  feature or website Look through some of my work and experience! 
-                  If you like what you see and need help on a project, I am available
-                    for hire.
-              </p>
-              <div class="social-header">
-                  <h4 class="about-sh-p">LET'S CONNECT</h4>
+              <div class="about-col-1">
+                <h1>About <br>Myself</h1>
+                <p>
+                    My Name is Okoye Charles and I’m a software developer!
+                      I can help you build a product ,
+                    feature or website Look through some of my work and experience! 
+                    If you like what you see and need help on a project, I am available
+                      for hire.
+                </p>
+                <div class="social-header">
+                    <h4 class="about-sh-p">LET'S CONNECT</h4>
+                </div>
+                <nav class="social-links">
+                    <ul>
+                        <li><a href="https://twitter.com/OkoyeCharles_"><img src="images/Github.png" alt="Twitter Icon"></a></li>
+                        <li><a href="https://www.linkedin.com/in/charles-okoye-633374236/"><img src="images/Linkedinicon.png" alt="LinkedIn"></a></li>
+                        <li><a href="mailto:okoyecharles509@gmail.com"><img src="images/Gmail.png" alt="Gmail"></a></li>
+                        <li><a href="https://github.com/OkoyeCharles"><img src="images/Vector.png" alt="Github"></a></li>
+                        <li><a href="#"><img src="images/Fingers.png" alt="Fingers"></a></li>
+                    </ul>
+                </nav>
+                <button class="about-button button" type="button">Get my resume</button>
               </div>
-              <nav class="social-links">
-                  <ul>
-                      <li><a href="https://twitter.com/OkoyeCharles_"><img src="images/Github.png" alt="Twitter Icon"></a></li>
-                      <li><a href="https://www.linkedin.com/in/charles-okoye-633374236/"><img src="images/Linkedinicon.png" alt="LinkedIn"></a></li>
-                      <li><a href="mailto:okoyecharles509@gmail.com"><img src="images/Gmail.png" alt="Gmail"></a></li>
-                      <li><a href="https://github.com/OkoyeCharles"><img src="images/Vector.png" alt="Github"></a></li>
-                      <li><a href="#"><img src="images/Fingers.png" alt="Fingers"></a></li>
-                  </ul>
-              </nav>
-              <button class="about-button button" type="button">Get my resume</button>
-              <ul class="about-list">
-                <li class="firli"><p>Languages</p><img src="images/droppressed.png" alt="drop-pressed"></li>
-              </ul>
-              <ul class="lang-drop">
-                <li><img src="images/JAVASCRIPT.png" alt="javaScript logo"><p>javaScript</p></li>
-                <li><img src="images/HTML.png" alt="html logo"><p>HTML</p></li>
-                <li><img src="images/CSS.png" alt="css logo"><p>CSS</p></li>
-              </ul>
-              <ul class="about-list">
-                <li class="secli"><p>Frameworks</p><img src="images/drop.png" alt="drop"></li>
-                <li class="thrli"><p>Skills</p><img src="images/drop.png" alt="drop"></li>
-              </ul>              
+              <div class="about-col-2">
+                <ul class="about-list">
+                  <li class="firli"><p>Languages</p><img src="images/droppressed.png" alt="drop-pressed"></li>
+                </ul>
+                <ul class="lang-drop">
+                  <li><img src="images/JAVASCRIPT.png" alt="javaScript logo"><p>javaScript</p></li>
+                  <li><img src="images/HTML.png" alt="html logo"><p>HTML</p></li>
+                  <li><img src="images/CSS.png" alt="css logo"><p>CSS</p></li>
+                </ul>
+                <ul class="about-list">
+                  <li class="secli"><p>Frameworks</p><img src="images/drop.png" alt="drop"></li>
+                  <li class="thrli"><p>Skills</p><img src="images/drop.png" alt="drop"></li>
+                </ul>  
+              </div>            
           </section>
 
         </section>
 
         <!--Contact Section-->
         <section class="contact-section">
-          <div class="contact-wrap">
-            <div class="contact-content">
-              <h1>Contact me</h1>
-              <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+          <a href="" id="Contact"></a>
+          <div class="contact-bg-wrap">
+            <div class="contact-wrap">
+              <div class="contact-content">
+                <h1>Contact me</h1>
+                <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+              </div>
+  
+              <form class="contact-form" action="https://formspree.io/f/mdobbbnd" method="post">
+                <ul>
+                  <li><input name="Name" class="form-input" type="text" placeholder="Name" maxlength="30" required></li>
+                  <li><input name="Email" class="form-input" type="email" placeholder="Email" required></li>
+                  <li><textarea name="Message" class="form-input" placeholder="Write your message here" maxlength="500" required></textarea></li>
+                  <li><button class="cf-button button" type="submit">Get In Touch</button></li>
+                </ul>
+              </form>
             </div>
-
-            <form class="contact-form" action="https://formspree.io/f/mdobbbnd" method="post">
-              <ul>
-                <li><input name="Name" class="form-input" type="text" placeholder="Name" maxlength="30" required></li>
-                <li><input name="Email" class="form-input" type="email" placeholder="Email" required></li>
-                <li><textarea name="Message" class="form-input" placeholder="Write your message here" maxlength="500" required></textarea></li>
-                <li><button class="cf-button button" type="submit">Get In Touch</button></li>
-              </ul>
-            </form>
           </div>
         </section>
 
