@@ -25,11 +25,10 @@
 @keyframes bg-slide {
   from {
     background: url(images/Rectangle\ 5.png) 12% -15% no-repeat, url(images/Ellipse\ 3.png) 107% 23% no-repeat, url(images/Rectangle\ 4.png) 130% 15% no-repeat, url(images/Rectangle\ 5.png) 110% 85% no-repeat, url(images/Ellipse\ 15.png) -10% 39% no-repeat, url(images/Ellipse\ 15.png) -30% 59% no-repeat, url(images/Ellipse\ 5.png) -20% 67% no-repeat, url(images/Ellipse\ 5.png) -20% 62% no-repeat, url(images/Ellipse\ 13.png) -10% 79.5% no-repeat, url(images/Ellipse\ 12.png) -15% 75% no-repeat;
-
   }
+
   to {
     background: url(images/Rectangle\ 5.png) 12% -4% no-repeat, url(images/Ellipse\ 3.png) 100% 23% no-repeat, url(images/Rectangle\ 4.png) 100% 15% no-repeat, url(images/Rectangle\ 5.png) 102% 85% no-repeat, url(images/Ellipse\ 15.png) 32% 39% no-repeat, url(images/Ellipse\ 15.png) 52% 59% no-repeat, url(images/Ellipse\ 5.png) 47% 67% no-repeat, url(images/Ellipse\ 5.png) 35% 62% no-repeat, url(images/Ellipse\ 13.png) 18% 79.5% no-repeat, url(images/Ellipse\ 12.png) 19% 75% no-repeat;
-
   }
 }
 
@@ -454,6 +453,7 @@ button {
       right: 100%;
       opacity: 0;
     }
+
     to {
       position: relative;
       right: 0%;
@@ -589,12 +589,12 @@ button {
     width: 100%;
     left: 0;
     bottom: -5px;
-    transform: scale(0,1);
+    transform: scale(0, 1);
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
   .nav-links ul li a:hover::after {
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
 
   .mobile-menu {
