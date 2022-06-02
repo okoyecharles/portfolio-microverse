@@ -18,6 +18,19 @@
 
 .first-section {
   background: url(images/Rectangle\ 5.png) 12% -4% no-repeat, url(images/Ellipse\ 3.png) 100% 23% no-repeat, url(images/Rectangle\ 4.png) 100% 15% no-repeat, url(images/Rectangle\ 5.png) 102% 85% no-repeat, url(images/Ellipse\ 15.png) 32% 39% no-repeat, url(images/Ellipse\ 15.png) 52% 59% no-repeat, url(images/Ellipse\ 5.png) 47% 67% no-repeat, url(images/Ellipse\ 5.png) 35% 62% no-repeat, url(images/Ellipse\ 13.png) 18% 79.5% no-repeat, url(images/Ellipse\ 12.png) 19% 75% no-repeat;
+  animation-duration: 1s;
+  animation-name: bg-slide;
+}
+
+@keyframes bg-slide {
+  from {
+    background: url(images/Rectangle\ 5.png) 12% -15% no-repeat, url(images/Ellipse\ 3.png) 107% 23% no-repeat, url(images/Rectangle\ 4.png) 130% 15% no-repeat, url(images/Rectangle\ 5.png) 110% 85% no-repeat, url(images/Ellipse\ 15.png) -10% 39% no-repeat, url(images/Ellipse\ 15.png) -30% 59% no-repeat, url(images/Ellipse\ 5.png) -20% 67% no-repeat, url(images/Ellipse\ 5.png) -20% 62% no-repeat, url(images/Ellipse\ 13.png) -10% 79.5% no-repeat, url(images/Ellipse\ 12.png) -15% 75% no-repeat;
+
+  }
+  to {
+    background: url(images/Rectangle\ 5.png) 12% -4% no-repeat, url(images/Ellipse\ 3.png) 100% 23% no-repeat, url(images/Rectangle\ 4.png) 100% 15% no-repeat, url(images/Rectangle\ 5.png) 102% 85% no-repeat, url(images/Ellipse\ 15.png) 32% 39% no-repeat, url(images/Ellipse\ 15.png) 52% 59% no-repeat, url(images/Ellipse\ 5.png) 47% 67% no-repeat, url(images/Ellipse\ 5.png) 35% 62% no-repeat, url(images/Ellipse\ 13.png) 18% 79.5% no-repeat, url(images/Ellipse\ 12.png) 19% 75% no-repeat;
+
+  }
 }
 
 article h1 {
@@ -103,7 +116,7 @@ header nav {
 header nav .logo {
   border-bottom: 15px;
   font-size: 18px;
-  color: blueviolet;
+  color: #6070ff;
   font-weight: 700;
 }
 
@@ -431,17 +444,20 @@ button {
 
 @media only screen and (min-width: 768px) {
   .logo {
-    animation-duration: 3s;
-    animation-name: rotate-z;
-    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-name: s-slidein;
   }
 
-  @keyframes rotate-z {
+  @keyframes s-slidein {
     from {
-      transform: rotateY(0deg);
+      position: relative;
+      right: 100%;
+      opacity: 0;
     }
     to {
-      transform: rotateY(360deg);
+      position: relative;
+      right: 0%;
+      opacity: 1;
     }
   }
 
@@ -466,10 +482,46 @@ button {
   .content-text h1 {
     margin-bottom: 10px;
     font-size: 48px;
+    animation-duration: 1.5s;
+    animation-name: h-slidein;
+  }
+
+  @keyframes h-slidein {
+    from {
+      margin-left: -110%;
+      margin-right: 110%;
+      opacity: 0;
+      transform: rotateY(110deg);
+    }
+
+    to {
+      margin-left: 0%;
+      margin-right: 0%;
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
   }
 
   article p {
     font-size: 20px;
+    animation-duration: 1.5s;
+    animation-name: p-slidein;
+  }
+
+  @keyframes p-slidein {
+    from {
+      margin-left: 110%;
+      margin-right: -110%;
+      opacity: 0;
+      transform: rotateY(110deg);
+    }
+
+    to {
+      margin-left: 0%;
+      margin-right: 0%;
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
   }
 
   .first-section > h1 {
@@ -506,15 +558,43 @@ button {
     margin-bottom: 20px;
   }
 
+  .nav-links ul {
+    display: flex;
+    list-style: none;
+  }
+
   .nav-links ul li {
-    display: inline;
     padding: 16px;
-    font-weight: 500;
-    font-size: 15px;
   }
 
   .nav-links ul li a {
     color: #172b4d;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5 cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .nav-links ul li a:hover {
+    color: black;
+  }
+
+  .nav-links ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: #6070ff;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    transform: scale(0,1);
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .nav-links ul li a:hover::after {
+    transform: scale(1,1);
   }
 
   .mobile-menu {
