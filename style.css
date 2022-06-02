@@ -507,16 +507,16 @@ button {
     display: none;
   }
 
-  .card:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
   .card {
     width: 90%;
     display: flex;
     cursor: pointer;
     margin-bottom: 71px;
     transition: 0.5s;
+  }
+
+  .card:nth-child(even) {
+    flex-direction: row-reverse;
   }
 
   .card > div {
