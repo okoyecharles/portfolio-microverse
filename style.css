@@ -484,21 +484,21 @@ button {
     font-size: 48px;
     animation-duration: 1.5s;
     animation-name: h-slidein;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
   }
 
   @keyframes h-slidein {
     from {
-      margin-left: -110%;
-      margin-right: 110%;
+      margin-bottom: 100px;
+      margin-top: -100px;
       opacity: 0;
-      transform: rotateY(110deg);
+      transform: rotateX(110deg);
     }
 
     to {
-      margin-left: 0%;
-      margin-right: 0%;
       opacity: 1;
-      transform: rotateY(0deg);
+      transform: rotateX(0deg);
     }
   }
 
@@ -506,21 +506,19 @@ button {
     font-size: 20px;
     animation-duration: 1.5s;
     animation-name: p-slidein;
+    animation-delay: 1.8s;
+    animation-fill-mode: both;
   }
 
   @keyframes p-slidein {
     from {
-      margin-left: 110%;
-      margin-right: -110%;
+      margin-left: -20%;
+      margin-right: 20%;
       opacity: 0;
-      transform: rotateY(110deg);
     }
 
     to {
-      margin-left: 0%;
-      margin-right: 0%;
       opacity: 1;
-      transform: rotateY(0deg);
     }
   }
 
@@ -630,7 +628,7 @@ button {
     width: 90%;
     padding: 4%;
     align-self: center;
-    transition: 1s;
+    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
   }
 
   .card-image img:hover {
