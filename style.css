@@ -112,11 +112,66 @@ header nav {
   justify-content: space-between;
 }
 
-header nav .logo {
-  border-bottom: 15px;
-  font-size: 18px;
-  color: #6070ff;
-  font-weight: 700;
+#logo {
+  animation: fill 1s forwards 3s;
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 60.63916778564453px;
+  stroke-dashoffset: 60.63916778564453px;
+  animation: tracein 2s forwards;
+}
+
+#logo path:nth-child(2) {
+  stroke-dasharray: 67.46404266357422px;
+  stroke-dashoffset: 67.46404266357422px;
+  animation: tracein 2s forwards 0.4s;
+}
+
+#logo path:nth-child(3) {
+  stroke-dasharray: 59.224525451660156px;
+  stroke-dashoffset: 59.224525451660156px;
+  animation: tracein 2s forwards 0.8s;
+}
+
+#logo path:nth-child(4) {
+  stroke-dasharray: 65.16596984863281px;
+  stroke-dashoffset: 65.16596984863281px;
+  animation: tracein 2s forwards 1.2s;
+}
+
+#logo path:nth-child(5) {
+  stroke-dasharray: 39.49201965332031px;
+  stroke-dashoffset: 39.49201965332031px;
+  animation: tracein 2s forwards 1.6s;
+}
+
+#logo path:nth-child(6) {
+  stroke-dasharray: 58.32002258300781px;
+  stroke-dashoffset: 58.32002258300781px;
+  animation: tracein 2s forwards 2.0s;
+}
+
+#logo path:nth-child(7) {
+  stroke-dasharray: 60.62504959106445px;
+  stroke-dashoffset: 60.62504959106445px;
+  animation: tracein 2s forwards 2.4s;
+}
+
+@keyframes tracein {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+
+  to {
+    fill: #6070ff;
+  }
 }
 
 header nav a {
@@ -442,25 +497,6 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
-  .logo {
-    animation-duration: 1s;
-    animation-name: s-slidein;
-  }
-
-  @keyframes s-slidein {
-    from {
-      position: relative;
-      right: 100%;
-      opacity: 0;
-    }
-
-    to {
-      position: relative;
-      right: 0%;
-      opacity: 1;
-    }
-  }
-
   #Portfolio {
     position: absolute;
   }
