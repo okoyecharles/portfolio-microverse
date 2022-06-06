@@ -149,7 +149,7 @@ header nav {
 #logo path:nth-child(6) {
   stroke-dasharray: 58.32002258300781px;
   stroke-dashoffset: 58.32002258300781px;
-  animation: tracein 2s forwards 2.0s;
+  animation: tracein 2s forwards 2s;
 }
 
 #logo path:nth-child(7) {
@@ -160,7 +160,7 @@ header nav {
 
 @keyframes tracein {
   to {
-    stroke-dashoffset: 0px;
+    stroke-dashoffset: 0;
   }
 }
 
@@ -664,7 +664,7 @@ button {
     width: 90%;
     padding: 4%;
     align-self: center;
-    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+    transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
 
   .card-image img:hover {
