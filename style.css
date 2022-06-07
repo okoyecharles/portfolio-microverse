@@ -7,13 +7,17 @@
 }
 
 .home-wrap {
-  max-height: 100vh;
   background: #fff;
   border-radius: 0.001% 0.001% 0.001% 15%;
 }
 
 .home-wrap > section {
   min-height: 500px;
+}
+
+.sec-def-header {
+  display: none;
+  position: absolute;
 }
 
 .first-section {
@@ -149,7 +153,7 @@ header nav {
 #logo path:nth-child(6) {
   stroke-dasharray: 58.32002258300781px;
   stroke-dashoffset: 58.32002258300781px;
-  animation: tracein 2s forwards 2.0s;
+  animation: tracein 2s forwards 2s;
 }
 
 #logo path:nth-child(7) {
@@ -160,7 +164,7 @@ header nav {
 
 @keyframes tracein {
   to {
-    stroke-dashoffset: 0px;
+    stroke-dashoffset: 0;
   }
 }
 
@@ -229,6 +233,10 @@ article p {
   color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
+}
+
+.content nav {
+  margin-bottom: 25px;
 }
 
 .social-links ul {
@@ -389,10 +397,6 @@ article p {
   justify-content: center;
 }
 
-.about-content .social-header {
-  font-weight: 800;
-}
-
 .about-content .social-links {
   padding-left: 10px;
 }
@@ -413,7 +417,7 @@ article p {
   margin-bottom: 10px;
 }
 
-.about-sh-p {
+.social-header > .about-sh-p {
   color: #7f8cff;
   font-weight: 500;
 }
@@ -465,6 +469,11 @@ article p {
   font-weight: 400;
   margin: 10px 0.001px;
   padding: 10px;
+}
+
+label {
+  position: absolute;
+  display: none;
 }
 
 .contact-form textarea {
@@ -562,10 +571,6 @@ button {
     position: absolute;
   }
 
-  .home-wrap {
-    height: 100vh;
-  }
-
   header {
     display: flex;
     justify-content: center;
@@ -575,7 +580,7 @@ button {
     width: 80%;
   }
 
-  .nav-menu > a {
+  .nav-menu > svg {
     align-self: center;
   }
 
@@ -664,7 +669,7 @@ button {
     width: 90%;
     padding: 4%;
     align-self: center;
-    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+    transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
 
   .card-image img:hover {
