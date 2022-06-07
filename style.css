@@ -32,13 +32,13 @@
   }
 }
 
-article h1 {
+article h2 {
   font-size: xx-large;
   font-weight: 800;
   color: #172b4d;
 }
 
-.first-section > h1 {
+.first-section > h2 {
   display: none;
   position: absolute;
 }
@@ -185,7 +185,7 @@ header nav a {
   padding: 0.001%;
 }
 
-.about-content h1 {
+.about-content h2 {
   font-size: 40px;
   font-weight: 700;
   color: #172b4d;
@@ -193,14 +193,14 @@ header nav a {
   margin-bottom: 0.001px;
 }
 
-.contact-content h1 {
+.contact-content h2 {
   font-size: 40px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 0.001px;
 }
 
-.card-content > article > h1 {
+.card-content > article > h2 {
   margin: 0.01px;
   font-size: 32px;
   font-weight: 700;
@@ -558,7 +558,7 @@ button {
     }
   }
 
-  .first-section > h1 {
+  .first-section > h2 {
     position: absolute;
   }
 
@@ -681,12 +681,12 @@ button {
     font-weight: 400;
   }
 
-  .about-content h1 {
+  .about-content h2 {
     padding: 0.001px;
     margin: 0.001px;
   }
 
-  .card-content > article > h1 {
+  .card-content > article > h2 {
     font-size: 40px;
   }
 
