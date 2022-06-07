@@ -178,7 +178,7 @@ header nav a {
   text-decoration: none;
 }
 
-.content-text > h1 {
+.content-text > h2 {
   font-size: 40px;
   font-weight: 700;
   color: #172b4d;
@@ -515,7 +515,7 @@ button {
     height: 80%;
   }
 
-  .content-text h1 {
+  .content-text h2 {
     margin-bottom: 10px;
     font-size: 48px;
     animation-duration: 1.5s;
