@@ -8,7 +8,6 @@ const navLink3 = document.getElementById('nav-link3');
 
 const wrap = document.querySelector('.wrapper');
 
-
 // listen for individual clicks
 navLink1.addEventListener('click', () => {
   navLinks.classList.toggle('active');
