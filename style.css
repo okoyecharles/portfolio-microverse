@@ -529,7 +529,7 @@ button {
 .nav-links {
   position: fixed;
   background: rgb(255, 255, 255, 0.3);
-  backdrop-filter: blur(0);
+  backdrop-filter: blur(4px);
   width: 100%;
   height: 100%;
   left: 100vw;
@@ -540,6 +540,7 @@ button {
 .nav-links.active {
   position: fixed;
   background: rgb(96, 112, 255, 0.85);
+  backdrop-filter: blur(4px);
   width: 100%;
   height: 100%;
   left: 0;
