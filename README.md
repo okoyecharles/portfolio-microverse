@@ -24,6 +24,10 @@ If you have a suggestion that would make this better, please fork the repository
 
 - Pair-programming partner [Repository link](https://github.com/krisbobo/Portfolio-mobileVersionSkeleton)
 
+## See it Live
+
+Click [here](https://okoyecharles.github.io/) to see my Porfolio on the Live on The Web
+
 ## Acknowledgements
 
 - Credit to ![](https://img.shields.io/badge/Microverse-blueviolet) for providing the essential resources that made this project possible 
