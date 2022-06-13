@@ -2,7 +2,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .wrapper {
+  background: #f5f5f5;
+}
+
+.wrapper.w-active {
+  position: fixed;
   background: #f5f5f5;
 }
 
@@ -20,10 +30,14 @@
   position: absolute;
 }
 
-.first-section {
+.bg-first-section {
   background: url(images/Rectangle\ 5.png) 12% -4% no-repeat, url(images/Ellipse\ 3.png) 100% 23% no-repeat, url(images/Rectangle\ 4.png) 100% 15% no-repeat, url(images/Rectangle\ 5.png) 102% 85% no-repeat, url(images/Ellipse\ 15.png) 32% 39% no-repeat, url(images/Ellipse\ 15.png) 52% 59% no-repeat, url(images/Ellipse\ 5.png) 47% 67% no-repeat, url(images/Ellipse\ 5.png) 35% 62% no-repeat, url(images/Ellipse\ 13.png) 18% 79.5% no-repeat, url(images/Ellipse\ 12.png) 19% 75% no-repeat;
   animation-duration: 1s;
   animation-name: bg-slide;
+}
+
+.first-section {
+  padding: 6%;
 }
 
 @keyframes bg-slide {
@@ -97,6 +111,13 @@ header nav img {
 .card-time > img {
   height: 8px;
   width: 8px;
+}
+
+.nav-links img {
+  height: 20px;
+  width: 20px;
+  align-self: flex-end;
+  padding: 20px;
 }
 
 .about-list > li > img {
@@ -500,9 +521,44 @@ button {
   cursor: pointer;
 }
 
+#nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
 .nav-links {
-  position: absolute;
-  display: none;
+  position: fixed;
+  background: rgb(255, 255, 255, 0.3);
+  backdrop-filter: blur(0);
+  width: 100%;
+  height: 100%;
+  left: 100vw;
+  top: 0;
+  transition: 0.5s;
+}
+
+.nav-links.active {
+  position: fixed;
+  background: rgb(96, 112, 255, 0.85);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 1rem 3rem;
+}
+
+.nav-links ul a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -514,6 +570,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0;
   }
 
   .content {
@@ -547,7 +604,7 @@ button {
     }
   }
 
-  article p {
+  .content-text > article > p {
     font-size: 20px;
     animation-duration: 1.5s;
     animation-name: p-slidein;
@@ -578,6 +635,8 @@ button {
 
   .nav-menu {
     width: 80%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .nav-menu > svg {
@@ -587,6 +646,23 @@ button {
   .nav-links {
     display: block;
     position: static;
+    background: none;
+    backdrop-filter: none;
+    transition: 0s;
+  }
+
+  .nav-links ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
+  }
+
+  #close-menu {
+    position: absolute;
+    display: none;
   }
 
   .lang-drop li {
@@ -595,11 +671,6 @@ button {
     width: 90px;
     margin-right: 10px;
     margin-bottom: 20px;
-  }
-
-  .nav-links ul {
-    display: flex;
-    list-style: none;
   }
 
   .nav-links ul li {
