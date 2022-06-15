@@ -216,3 +216,5 @@ buttons.forEach((x) => x.addEventListener('click', () => {
     body.classList.toggle('unscroll');
   }
 }));
+
+// Form Client-Side Validation Goes Here!

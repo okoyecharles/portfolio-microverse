@@ -463,6 +463,36 @@ article p {
   padding-left: 10px;
 }
 
+#email.invalid {
+  border: 1px solid red;
+}
+
+.input-container {
+  position: relative;
+}
+
+#email-error {
+  position: absolute;
+  left: 50%;
+  font-size: 13px;
+  font-weight: 500;
+  transform: translateX(-50%);
+  top: 88%;
+  background: rgb(241, 255, 252);
+  border: 1px black solid;
+  color: red;
+  padding: 10px 9px;
+  border-radius: 5px;
+  opacity: 0;
+  z-index: 2;
+  transition: 1s;
+}
+
+#email-error.display {
+  opacity: 1;
+  padding: 10px 10px;
+}
+
 .about-button {
   display: flex;
   justify-content: center;

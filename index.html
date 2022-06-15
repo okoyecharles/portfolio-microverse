@@ -146,11 +146,11 @@
                 <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
               </div>
   
-              <form class="contact-form" action="https://formspree.io/f/mdobbbnd" method="post">
+              <form class="contact-form" id="contact-form" action="https://formspree.io/f/mdobbbnd" method="post">
                 <ul>
-                  <li><label>Name</label><input name="Name" class="form-input" type="text" value="" placeholder="Name" maxlength="30" required></li>
-                  <li><label>E-Mail</label><input name="Email" class="form-input" type="email" value="" placeholder="Email" required></li>
-                  <li><label>Message</label><textarea name="Message" class="form-input" placeholder="Write your message here" maxlength="500" required></textarea></li>
+                  <li class="input-container"><label>Name</label><input name="Name" id="name" class="form-input" type="text" value="" placeholder="Name" maxlength="30" required></li>
+                  <li class="input-container"><label>E-Mail</label><input name="Email" id="email" class="form-input" type="email" value="" placeholder="Email" required><span id="email-error">Error Message</span></li>
+                  <li class="input-container"><label>Message</label><textarea name="Message" id="message" class="form-input" placeholder="Write your message here" maxlength="500" required></textarea></li>
                   <li><button class="cf-button button" type="submit">Get In Touch</button></li>
                 </ul>
               </form>
