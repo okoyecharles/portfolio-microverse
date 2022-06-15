@@ -218,30 +218,27 @@ buttons.forEach((x) => x.addEventListener('click', () => {
 }));
 
 // Form Client-Side Validation Goes Here!
-const form = document.getElementById('contact-form')
-const formInput = Array.from(document.querySelectorAll('.form-input'))
-const email = document.getElementById('email')
-const emailError = document.getElementById('email-error')
-
+const form = document.getElementById('contact-form');
+const formInput = Array.from(document.querySelectorAll('.form-input'));
+const email = document.getElementById('email');
+const emailError = document.getElementById('email-error');
 
 form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {
-    e.preventDefault()
-    emailError.innerHTML = "Email Inputs should be lowercase"
-    emailError.classList.add('display')
-    email.classList.add('invalid')
-  } 
-  else {
-    emailError.innerHTML = ""
-    if (email.classList.contains('invalid')) {email.classList.remove('invalid')}
+    e.preventDefault();
+    emailError.innerHTML = 'Email Inputs should be lowercase';
+    emailError.classList.add('display');
+    email.classList.add('invalid');
+  } else {
+    emailError.innerHTML = '';
+    if (email.classList.contains('invalid')) { email.classList.remove('invalid'); }
   }
- 
-})
+});
 
-formInput.forEach(x => x.addEventListener('click', () => {
+formInput.forEach((x) => x.addEventListener('click', () => {
   if (emailError.classList.contains('display')) {
-    emailError.innerHTML = "Email Inputs should be lowercase"
-    emailError.classList.remove('display')
-    email.classList.add('invalid')
-  } 
-}))
+    emailError.innerHTML = 'Email Inputs should be lowercase';
+    emailError.classList.remove('display');
+    email.classList.add('invalid');
+  }
+}));
