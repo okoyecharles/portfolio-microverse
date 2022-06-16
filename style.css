@@ -132,8 +132,8 @@ header nav img {
 }
 
 .popup > img {
-  width: 200px;
   align-self: center;
+  width: 100%;
 }
 
 .popup-h-content img {
@@ -654,10 +654,6 @@ button {
   height: 85vh;
 }
 
-.popup > img {
-  width: 100%;
-}
-
 .popup-content-time {
   display: flex;
   max-width: 300px;
@@ -695,7 +691,7 @@ button {
   display: flex;
   justify-content: flex-start;
   padding-bottom: 20px;
-  border-bottom: 2px #EBECF0 solid;
+  border-bottom: 2px #ebecf0 solid;
 }
 
 .popup-links {
