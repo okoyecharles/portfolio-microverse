@@ -242,3 +242,32 @@ formInput.forEach((x) => x.addEventListener('click', () => {
     email.classList.add('invalid');
   }
 }));
+
+
+// Save Form Inputs to Local Storage 
+
+const storeInputs = e => {
+  const inputs = {
+    name : document.getElementById('name').value,
+    email : document.getElementById('email').value,
+    message : document.getElementById('message').value
+  }
+  console.log(inputs)
+  localStorage.setItem('form_inputs', JSON.stringify(inputs))
+  e.preventDefault()
+}
+
+const setInputs = () => {
+  if (localStorage.getItem('form_inputs')) {
+    const {
+      name,
+      email,
+      message
+    } = JSON.parse(localStorage.getItem('form_inputs'));
+    document.getElementById('name').value = name
+    document.getElementById('email').value = email
+    document.getElementById('message').value = message
+  }
+}
+
+setInputs()
