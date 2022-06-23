@@ -728,6 +728,11 @@ button {
   .popup.active {
     width: 90vw;
     padding: 0 1rem;
+    align-content: center;
+  }
+
+  .popup.active > *{
+    margin: 0 20px;
   }
 
   .popup > img {
