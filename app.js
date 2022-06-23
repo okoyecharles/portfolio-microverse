@@ -42,7 +42,7 @@ const cardArray = [
     longDescription: 'Save-the-child is one of my projects with the theme for giving the youth from different continents (especcially the children) who have been inflicted mentally, physically or psychologically by the COVID-19 Pandemeic, at Save-the-child we firmly believe that every human in the world no matter their ethinicity, background or color deserves to be given a chance to live a well deserved life, Whether its clear to you or not children are the leaders of tomorrow.',
     languages: ['html', 'css', 'javascript'],
     live: 'https://okoyecharles.github.io/capstone-save-a-child',
-    source: 'https://github.com/OkoyeCharles/capstone-save-a-child'
+    source: 'https://github.com/OkoyeCharles/capstone-save-a-child',
   },
   {
     name: 'Multi-Post Stories',
@@ -57,7 +57,7 @@ const cardArray = [
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['html', 'css', 'javascript'],
     live: '#',
-    source: '#'
+    source: '#',
   },
   {
     name: 'Tonic',
@@ -72,7 +72,7 @@ const cardArray = [
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['html', 'css', 'javascript'],
     live: '#',
-    source: '#'
+    source: '#',
   },
   {
     name: 'Multi-Post Stories',
@@ -87,7 +87,7 @@ const cardArray = [
     longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     languages: ['html', 'css', 'javascript'],
     live: '#',
-    source: '#'
+    source: '#',
   },
 ];
 
@@ -174,11 +174,11 @@ const createPopup = (arr, i) => {
   popupLinks.className = 'popup-links';
   const popupButton1 = document.createElement('a');
   popupButton1.innerHTML = 'See Live';
-  popupButton1.href = arr[i].live
-  popupButton1.setAttribute('target', 'blank')
+  popupButton1.href = arr[i].live;
+  popupButton1.setAttribute('target', 'blank');
   const popupButton2 = document.createElement('a');
-  popupButton2.href = arr[i].source
-  popupButton2.setAttribute('target', 'blank')
+  popupButton2.href = arr[i].source;
+  popupButton2.setAttribute('target', 'blank');
   popupButton2.innerHTML = 'See Source';
   const popupbtnimg1 = document.createElement('img');
   popupbtnimg1.src = 'images/seelive.png';
