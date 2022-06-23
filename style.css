@@ -2,9 +2,30 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ececec;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
 }
 
 .body.unscroll {
@@ -114,6 +135,7 @@ header nav img {
 }
 
 .card-image img {
+  width: 95%;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -302,7 +324,7 @@ article p {
 }
 
 .main-section {
-  margin: 10px 0.001px 10px 0.001px;
+  margin: 0;
 }
 
 .about-section {
@@ -505,12 +527,13 @@ article p {
   background: #fff;
   font-size: 18px;
   font-weight: 500;
-  transition: 1s;
+  transition: 0.5s;
   margin-bottom: 10px;
 }
 
 .social-header > .about-sh-p {
   color: #7f8cff;
+  margin-bottom: 20px;
   font-weight: 500;
 }
 
@@ -588,7 +611,7 @@ button {
 .button:hover {
   background: #6070ff;
   color: #fff;
-  border: none;
+  border: 1px solid #6070ff;
   cursor: pointer;
 }
 
@@ -627,6 +650,18 @@ button {
   padding: 1rem 3rem;
 }
 
+.popup-links > a {
+  padding: 10px;
+  background: white;
+  color: #6070ff;
+  border: 1px #6070ff solid;
+  font-size: 15px;
+  align-items: center;
+  border-radius: 15px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
 .nav-links ul a {
   color: #fff;
   font-weight: 600;
@@ -636,22 +671,28 @@ button {
 /* popup styles */
 
 .popup {
-  padding: 1rem;
   background: white;
   border: 1px #dfe1e6 solid;
   border-radius: 8px;
-  display: none;
+  opacity: 0;
+  transition: 0.75s;
+  transform: translateY(-50%);
 }
 
 .popup.active {
+  padding: 2rem 1rem;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  overflow: scroll;
   position: fixed;
   top: 5vh;
   left: 5vw;
   width: 80vw;
   height: 85vh;
+  transform: translateY(0%);
+  transition: 0.5s;
 }
 
 .popup-content-time {
@@ -700,26 +741,30 @@ button {
   margin-top: 10px;
 }
 
-.popup-links > button {
-  padding: 10px;
-  background: white;
-  border: 1px #6070ff solid;
-  font-size: 15px;
-  gap: 5px;
-  align-items: center;
-  transition: 0.5s;
+.popup-links > a > * {
+  margin-left: 20px;
 }
 
-.popup-links > button:hover {
+.popup-links > a:hover {
   cursor: pointer;
   background: #8b96ff;
   border: 1px #8b96ff solid;
   color: #fff;
 }
 
+.popup-links > a:active {
+  background: #2230d2;
+}
+
 @media only screen and (min-width: 768px) {
   .popup.active {
     width: 90vw;
+    padding: 0 1rem;
+    align-content: center;
+  }
+
+  .popup.active > * {
+    margin: 0 20px;
   }
 
   .popup > img {
@@ -753,9 +798,8 @@ button {
     justify-content: space-around;
   }
 
-  .popup-links > button {
+  .popup-links > a {
     padding: 10px 10px;
-    width: 40%;
     font-size: 15px;
   }
 
@@ -781,38 +825,32 @@ button {
   .content-text h2 {
     margin-bottom: 10px;
     font-size: 48px;
-    animation-duration: 1.5s;
-    animation-name: h-slidein;
-    animation-delay: 0.5s;
-    animation-fill-mode: both;
+    position: relative;
+    transform: translateY(-250px);
+    opacity: 0;
+    animation: h-slidein 1.5s 0.5s forwards;
   }
 
   @keyframes h-slidein {
     from {
-      margin-bottom: 100px;
-      margin-top: -100px;
       opacity: 0;
-      transform: rotateX(110deg);
+      transform: rotateX(-90deg) translateY(-250px);
     }
 
     to {
       opacity: 1;
-      transform: rotateX(0deg);
+      transform: rotateX(0deg) translateY(0);
     }
   }
 
   .content-text > article > p {
     font-size: 20px;
-    animation-duration: 1.5s;
-    animation-name: p-slidein;
-    animation-delay: 1.8s;
-    animation-fill-mode: both;
+    animation: p-slidein 1.5s 1.8s both;
   }
 
   @keyframes p-slidein {
     from {
-      margin-left: -20%;
-      margin-right: 20%;
+      transform: translateX(-300px);
       opacity: 0;
     }
 
@@ -929,22 +967,34 @@ button {
   }
 
   .card-image {
-    display: grid;
+    display: flex;
   }
 
   .card-image img {
     width: 90%;
     padding: 4%;
+    justify-self: center;
     align-self: center;
     transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
 
   .card-image img:hover {
+    position: relative;
+    padding: 2%;
     width: 95%;
   }
 
   .card-content {
     padding: 4%;
+  }
+
+  .card-content > article {
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  .card-content > article:nth-child(5) {
+    justify-self: center;
   }
 
   .card-content > article > p {
@@ -963,8 +1013,9 @@ button {
   }
 
   .card-time {
-    margin: 0.001px;
+    margin: 0;
     font-size: 18px;
+    width: 250px;
     text-align: center;
   }
 
@@ -1022,6 +1073,7 @@ button {
   }
 
   .cf-button {
+    margin: 1px solid #fff;
     padding: 12px 16px;
   }
 }
