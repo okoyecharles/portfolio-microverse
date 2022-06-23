@@ -729,21 +729,31 @@ button {
   margin-top: 10px;
 }
 
-.popup-links > button {
+.popup-links > a {
   padding: 10px;
   background: white;
+  color: #6070ff;
   border: 1px #6070ff solid;
   font-size: 15px;
-  gap: 5px;
   align-items: center;
+  border-radius: 15px;
   transition: 0.5s;
+  text-decoration: none;
 }
 
-.popup-links > button:hover {
+.popup-links > a > * {
+  margin-left: 20px;
+}
+
+.popup-links > a:hover {
   cursor: pointer;
   background: #8b96ff;
   border: 1px #8b96ff solid;
   color: #fff;
+}
+
+.popup-links > a:active {
+  background: #2230d2;
 }
 
 @media only screen and (min-width: 768px) {
@@ -788,9 +798,8 @@ button {
     justify-content: space-around;
   }
 
-  .popup-links > button {
+  .popup-links > a {
     padding: 10px 10px;
-    width: 40%;
     font-size: 15px;
   }
 
