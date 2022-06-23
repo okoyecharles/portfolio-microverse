@@ -2,9 +2,30 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ececec;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
 }
 
 .body.unscroll {
@@ -114,6 +135,7 @@ header nav img {
 }
 
 .card-image img {
+  width: 95%;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -302,7 +324,7 @@ article p {
 }
 
 .main-section {
-  margin: 10px 0.001px 10px 0.001px;
+  margin: 0;
 }
 
 .about-section {
@@ -505,7 +527,7 @@ article p {
   background: #fff;
   font-size: 18px;
   font-weight: 500;
-  transition: 1s;
+  transition: .5s;
   margin-bottom: 10px;
 }
 
@@ -589,7 +611,7 @@ button {
 .button:hover {
   background: #6070ff;
   color: #fff;
-  border: 3px;
+  border: 1px solid #6070ff;
   cursor: pointer;
 }
 
@@ -1042,6 +1064,7 @@ button {
   }
 
   .cf-button {
+    margin: 1px solid #fff;
     padding: 12px 16px;
   }
 }

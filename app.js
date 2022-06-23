@@ -11,35 +11,35 @@ const wrap = document.querySelector('.wrapper');
 
 // this will loop over each link when clicked
 navLink.forEach((link) => link.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-  wrap.classList.toggle('w-active');
+  navLinks.classList.remove('active');
+  wrap.classList.remove('w-active');
 }));
 
 // listen for hamburger click
 hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-  wrap.classList.toggle('w-active');
+  navLinks.classList.add('active');
+  wrap.classList.add('w-active');
 });
 
 // listen for close button click
 closeMenu.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-  wrap.classList.toggle('w-active');
+  navLinks.classList.remove('active');
+  wrap.classList.remove('w-active');
 });
 
 // All card Information will be referenced from this object
 const cardArray = [
   {
-    name: 'Tonic',
-    image: 'images/FirstCover.png',
+    name: 'Save A Child',
+    image: 'images/first-capstone-picture.png',
     time: {
-      text1: 'CANOPY',
+      text1: 'GITHUB',
       text2: 'Back-End-Dev',
       text3: '2015',
       img: 'images/Counter.png',
     },
-    description: 'A daily selection of privately personalized reads no accounts or sign-ups required.',
-    longDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Save-the-child is a non-profit organization brought together solely for giving the youth from different continents (especcially the children) who have been inflicted mentally, physically or psychologically by the COVID-19 Pandemeic.',
+    longDescription: 'Save-the-child is one of my projects with the theme for giving the youth from different continents (especcially the children) who have been inflicted mentally, physically or psychologically by the COVID-19 Pandemeic, at Save-the-child we firmly believe that every human in the world no matter their ethinicity, background or color deserves to be given a chance to live a well deserved life, Whether its clear to you or not children are the leaders of tomorrow.',
     languages: ['html', 'css', 'javascript'],
   },
   {
@@ -166,6 +166,7 @@ const createPopup = (arr, i) => {
   popupLinks.className = 'popup-links';
   const popupButton1 = document.createElement('button');
   popupButton1.innerHTML = 'See Live';
+  popupButton1.href = 'google.com'
   const popupButton2 = document.createElement('button');
   popupButton2.innerHTML = 'See Source';
   const popupbtnimg1 = document.createElement('img');
