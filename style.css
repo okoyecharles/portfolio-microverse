@@ -413,6 +413,11 @@ article p {
 .social-links ul li {
   list-style-type: none;
   width: 0%;
+  transition: transform 0.25s ease;
+}
+
+.social-links ul li:hover {
+  transform: scale(1.1);
 }
 
 .card-content article {
@@ -522,13 +527,18 @@ article p {
   margin-top: 10px;
   width: fit-content;
   border-radius: 8px;
-  color: #396df2;
   border: 1px #396df2 solid;
   background: #fff;
-  font-size: 18px;
-  font-weight: 500;
   transition: 0.5s;
   margin-bottom: 10px;
+}
+
+.about-button > a {
+  text-decoration: none;
+  color: #396df2;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 1.5s;
 }
 
 .social-header > .about-sh-p {
@@ -610,9 +620,29 @@ button {
 
 .button:hover {
   background: #6070ff;
-  color: #fff;
-  border: 1px solid #6070ff;
   cursor: pointer;
+}
+
+.popup-links > a {
+  padding: 10px;
+  background: white;
+  color: #6070ff;
+  border: 1px #6070ff solid;
+  font-size: 15px;
+  align-items: center;
+  border-radius: 15px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.nav-links ul a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.button:hover > a {
+  color: #fff;
 }
 
 #nav-links {
@@ -648,24 +678,6 @@ button {
   flex-direction: column;
   gap: 30px;
   padding: 1rem 3rem;
-}
-
-.popup-links > a {
-  padding: 10px;
-  background: white;
-  color: #6070ff;
-  border: 1px #6070ff solid;
-  font-size: 15px;
-  align-items: center;
-  border-radius: 15px;
-  transition: 0.5s;
-  text-decoration: none;
-}
-
-.nav-links ul a {
-  color: #fff;
-  font-weight: 600;
-  font-size: 32px;
 }
 
 /* popup styles */
