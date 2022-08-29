@@ -30,6 +30,20 @@ closeMenu.addEventListener('click', () => {
 // All card Information will be referenced from this object
 const cardArray = [
   {
+    name: 'Amazon Clone',
+    image: 'images/amazon-clone.png',
+    time: {
+      text1: 'FIREBASE',
+      text2: 'Full-Stack-Dev',
+      text3: '2022',
+      img: 'images/Counter.png',
+    },
+    description: 'A full-stack e-commerce website inspired by the amazon website.',
+    longDescription: 'A Responsive Full-stack e-commerce website inspired by the Amazon website. Built with React, Redux, and Firebase. Including functionalities such as Creating/Signing in to an account, Adding items to the cart, Making payments and so on',
+    languages: ['React.js', 'Redux.js', 'Firebase', 'Sass'],
+    live: 'https://clone-f50ae.web.app/',
+    source: 'https://github.com/OkoyeCharles/amazon-clone',
+  }, {
     name: 'Nethub',
     image: 'images/nethub-app.png',
     time: {
